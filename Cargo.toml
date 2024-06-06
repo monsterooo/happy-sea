@@ -1,0 +1,11 @@
+[package]
+name = "happy-sea"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15.0"
+futures = "0.3.30"
+sea-orm = { version = "0.12.15", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"] }
+sea-orm-migration = { version = "0.12.15", features = ["runtime-tokio-rustls", "sqlx-postgres"] }
+tokio = { version = "1.38.0", features = ["full"] }
